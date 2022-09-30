@@ -137,6 +137,17 @@ a{
     text-decoration: none;
     display: flex;
 }
+article.egg{
+    background-color: white;
+    color: white;
+}
+article.egg:hover{
+    background-color: white;
+    color: black;
+}
+p.egg{
+    text-indent: 0px;
+}
 .btn {
     box-sizing: border-box;
     -webkit-appearance: none;
