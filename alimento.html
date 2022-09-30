@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Stay Strong</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <img src="assets/img_header.png" alt="" id="first">
+        <h1>SAÚDE NA ACADEMIA</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Musculação</a></li>
+                <li><a href="alimento.html">Alimentação</a></li>
+                <li><a href="massa.html">Massa Muscular</a></li>
+                <li><a href="energia.html">Energia</a></li>
+                <li><a href="grupo.html">Grupo</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Alimentação e seus objetivos</h1>
+        <p>Uma alimentação saudável é aquela que garante ao organismo todos os nutrientes de que ele precisa. Isso significa que, para termos uma alimentação adequada, não temos que pensar apenas em quantidade, é fundamental pensar na qualidade do que estamos ingerindo, bem como na variedade e sempre pensar no equilíbrio em nossas refeições. Atualmente, erramos muito quando o assunto é alimentação saudável, principalmente, devido ao ritmo de vida que temos levado. Alimentos ricos em açúcar, gordura e sal, ausência de alimentos frescos em nossos pratos, pouca variedade e pular as refeições são alguns dos erros que cometemos ao nos alimentar.</p>
+        
+        <img id="sai" src="assets/alimentacao.jpg"  alt="">
+        <p>Para se ter uma alimentação saudável, alguns pontos importantes devem ser destacados, como:</p>
+        <ul>
+            <li>Não pular refeições;</li>
+            <li>Comer verduras, legumes e frutas diariamente;</li>
+            <li>Alimentar-se de alimentos in natura ou minimamente processados;</li>
+            <li>Evitar alimentos com muita gordura;</li>
+            <li>Reduzir a quantidade de sal nos alimentos;</li>
+            <li>Evitar alimentos industrializados;</li>
+            <li>Beber pelo menos dois litros de água diariamente.</li>
+        </ul>
+
+        <h2>Alimentos para ganhar massa muscular</h2>
+        <p>Existem diversos alimentos que podem auxiliar na dieta de quem busca ganhar massa muscular. Em geral, uma dieta rica em carboidratos e proteínas pode apresentar resultados positivos na hipertrofia. Além disso, o consumo de suplementos como o whey protein – à base da proteína do soro do leite – também podem contribuir para um melhor desenvolvimento dos músculos. Uma dieta equilibrada que envolve as três principais refeições do dia e pequenos lanches nos intervalos pode garantir o melhor para a sua saúde e para a sua hipertrofia. No entanto, lembre-se de fazer um acompanhamento com um nutricionista, para que você tenha ainda mais segurança no momento de iniciar uma nova dieta.</p>
+
+        <h2>Emagrecimento</h2>
+        <p>Emagrecer com saúde depende da combinação de dieta saudável e balanceada com atividades físicas regulares. Assim, muito além do valor calórico de cada alimento, deve-se prezar pelo seu valor nutricional - como, por exemplo, a presença de nutrientes como vitaminas e minerais -, contemplando todos os grupos alimentares nas refeições. A pirâmide alimentar classifica os alimentos em oito grupos: carboidratos, vegetais, frutas, carnes, leite, leguminosas, gorduras e açúcares. Cada um desses grupos possui sua própria função e importância para a saúde, e deve ser inserido na dieta em níveis adequados para atingir o emagrecimento. O acompanhamento de um nutricionista também é indicado para emagrecer com saúde. Esse profissional é capacitado para desenvolver uma dieta hipocalórica que enfatize não somente o emagrecimento, mas que também preze pela saúde e pelo bem-estar.</p>
+        <h2>Suplementos</h2>
+        <p>São produtos com características e propriedades similares às alimentares, considerando os valores nutricionais. No entanto, os suplementos são substâncias químicas e concentradas produzidas nos mais variados formatos. Eles podem ser consumidos em forma de cápsulas, líquidos, pó, granulados e pastilhas. A composição de vitaminas, minerais e vitaminas, beneficia a saúde do coração, rins, fígado e músculos. Antes de mostrar a utilidade e a eficácia dos suplementos, é importante dizer que eles não substituem uma . Portanto, devem ser usados exatamente como complemento, para balancear e equilibrar as taxas de nutrientes do corpo. Assim, eles serão capazes de cumprir a missão a qual foram desenvolvidos. Portanto, eles servem para complementar a alimentação, para deixá-la mais saudável e balanceada, de acordo com os objetivos de cada pessoa.</p>
+        <img id="sai" src="assets/suplementos.jpg" class="img-fluid" alt="...">
+        </article>
+    </main>
+    
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    span#burguer{
+        display: none;
+    }
+    header{
+        background-color: rgb(55, 112, 235);
+        height: 120px;
+    }
+    img#first{
+        height: 120px;
+        vertical-align: middle;
+    }
+    header h1{
+        font-size: 50px;
+        vertical-align: middle;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    menu > ul > li > a{
+     font-size: 18px;
+    }
+    main{
+        width: 600px;
+        padding-top: 190px;
+    }
+    article > h1{
+        font-size: 40px;
+        text-align: left;
+        padding-bottom: 15px;
+    }
+    article > h2{
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    article > p{
+        font-size: 20px;
+        text-align: justify;
+        margin-bottom: 10px;
+        text-indent: 20px;
+    }
+}

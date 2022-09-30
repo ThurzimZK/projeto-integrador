@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Stay Strong</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <img src="assets/img_header.png" alt="" id="first">
+        <h1>SAÚDE NA ACADEMIA</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Musculação</a></li>
+                <li><a href="alimento.html">Alimentação</a></li>
+                <li><a href="massa.html">Massa Muscular</a></li>
+                <li><a href="energia.html">Energia</a></li>
+                <li><a href="grupo.html">Grupo</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Massa muscular</h1>
+            <p>Ganhar massa muscular é o objetivo de muitas pessoas que fazem treinos e frequentam a academia, assim como emagrecer. Com uma dieta elaborada por um profissional da área da saúde, uma rotina de exercícios físicos intensa e o consumo dos suplementos certos, é possível desenvolver os músculos de forma ainda mais eficiente. Confira agora mais informações sobre como desenvolver a hipertrofia, quais os tipos de alimentos indicados e a importância da proteína em uma dieta com o objetivo de ganhar massa muscular</p>
+            <img src="assets/massa1.jpg" alt="" id="sai">
+
+            <h2>Como ganhar massa muscular</h2>
+            <p>O processo de ganho de massa muscular se dá pela combinação de uma boa alimentação e de uma rotina de exercícios físicos intensos. Além disso, fazer musculação é muito importante para alcançar a hipertrofia, sendo indicada a realização de exercícios de grupos musculares alternados, já que o processo de desenvolvimento dos músculos ocorre durante a recuperação¹. Porém, é importante se consultar previamente com profissionais que podem guiar você da melhor maneira possível.</p>
+            <img src="assets/massa2.jpg" alt="" id="sai">
+
+            <h2>A importância da proteina na hipertrofia</h2>
+            <p>O consumo de proteína é essencial para quem deseja alcançar a hipertrofia perfeita. O consumo de alimentos ricos em proteína pode, além de gerar mais energia para os treinos, preservar as funções corporais durante os momentos de repouso e manter a integridade funcional do organismo². No entanto, o acompanhamento de uma dieta rica em proteínas deve ser feito por um profissional, para evitar que o consumo seja excessivo e prevenir o surgimento de possíveis efeitos colaterais, uma vez que o organismo consegue absorver uma quantidade certa por dia.</p>
+            <img src="assets/massa3.jpg" alt="" id="sai">
+        </article>
+    </main>
+    
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

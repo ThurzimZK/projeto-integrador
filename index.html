@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Stay Strong</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <img src="assets/img_header.png" alt="" id="first">
+        <h1>SAÚDE NA ACADEMIA</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Musculação</a></li>
+                <li><a href="alimento.html">Alimentação</a></li>
+                <li><a href="massa.html">Massa Muscular</a></li>
+                <li><a href="energia.html">Energia</a></li>
+                <li><a href="grupo.html">Grupo</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Musculação e seus objetivos</h1>
+            <p>A musculação pode ser definida como um tipo de exercício físico realizado com pesos de diversas cargas, amplitude e tempo de contração variáveis, aplicável a pessoas de diversas idades e com diferentes objetivos. Sua prática é vista por muitos apenas como uma forma de aumentar a <strong>massa muscular</strong>, no entanto, esse treinamento possui inúmeros benefícios, sendo inclusive capaz de combater a depressão, por exemplo.
+            </p>
+            <img id="sai" src="assets/musculacao.jpg" class="img-fluid" alt="...">
+            
+            <h2>Benefícios</h2>
+            <p>A musculação melhora o condicionamento cardiorrespiratório, diminui a quantidade de gordura, auxilia o <strong>emagrecimento</strong>, diminui o risco de diabetes, aumenta a autonomia em idosos e garante mais disposição física. O aumento da massa muscular é importante não apenas por uma questão estética: os músculos são responsáveis pelo aumento do metabolismo basal (calorias gastas para manter as funções vitais), por exigirem do organismo um maior gasto energético para sua manutenção. Por sua vez, manter a musculatura ativa desencadeia a produção de hormônios responsáveis pela queima de gordura, pela sensação de bem-estar e pelo aumento da síntese proteica, aspectos de grande importância ao longo do processo de envelhecimento.</p>
+            <h2>Tempo</h2>
+            <p>Outro ponto diz respeito ao tempo desprendido dentro da academia. Se o praticante passa muitas horas fazendo exercício, ele não treina intenso, e sim volumoso. Intensidade e volume são inversamente proporcionais. Mesmo sem perceber, o esforço diminui à medida que aumentamos a quantidade de repetições e exercícios a serem realizados, da mesma forma que acontece em uma corrida. Se o percurso for uma maratona, certamente não iremos correr rápido desde o começo. Na musculação a lógica é a mesma. A <strong>intensidade</strong> de um treino de 1 hora certamente será menor do que a de um treino de 15 minutos. Esta pequena reflexão sobre a intensidade de treino na musculação tem como objetivo ressaltar que o seu controle é peça fundamental para o sucesso de um programa de treinamento e que ela não está restrita ao aumento da carga. Qualquer que seja o objetivo, ter em mãos todas as ferramentas para o controle da intensidade é a chave principal para possibilitar a variação dos estímulos aplicados em cada montagem de séries de exercícios e para a busca constante dos resultados almejados.</p>
+        </article>
+    </main>
+    
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

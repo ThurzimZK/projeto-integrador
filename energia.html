@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Stay Strong</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <img src="assets/img_header.png" alt="" id="first">
+        <h1>SAÚDE NA ACADEMIA</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html">Musculação</a></li>
+                <li><a href="alimento.html">Alimentação</a></li>
+                <li><a href="massa.html">Massa Muscular</a></li>
+                <li><a href="energia.html">Energia</a></li>
+                <li><a href="grupo.html">Grupo</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Energia</h1>
+            <p>Você imagina um carro funcionando sem algum tipo de combustível? Seja gasolina, etanol ou, até mesmo, a eletricidade, os automóveis necessitam de energia para trabalhar. Assim também funciona o nosso corpo: sem qualquer energia, ele não consegue cumprir suas funções mais básicas, como respirar ou digerir, quem dirá realizar outras atividades que necessitam de maior gasto energético, como treinar. Por isso, ela é tão importante para quem quer ter o máximo de sua performance no treino.</p>
+            <img src="assets/energia1.jpg" alt="" id="sai">
+        
+            <h2>Quais as melhores formas de ter disposição?</h2>
+            <p>A natureza é realmente muito sábia. O nosso corpo dispõe de mais de uma fonte de energia, o que garante a sua sobrevivência. Por meio dos alimentos, o organismo recebe as calorias que são convertidas em energia para ser utilizada nas atividades. Porém, se não for usada no momento correto, ela é estocada em forma de gordura corporal para ser gasta em outra oportunidade. Dessa maneira, além da alimentação, conseguimos ter mais disposição queimando essa gordura. Para isso, algumas substâncias dão uma força extra, como os termogênicos — que ativam o metabolismo acelerando essa combustão. Existem também elementos que são estimulantes. Eles agem no cérebro deixando-o mais alerta e disposto, dando aquele pique para o corpo realizar as atividades. Lembrando que esses compostos podem ser encontrados na forma de suplementos alimentares.</p>
+            <img src="assets/energia2.jpg" alt="" id="sai">
+        
+            <h2>Quando a suplementação é indicada para aumentar a energia?</h2>
+            <p>Muitas vezes, somente a alimentação não é suficiente para termos a energia necessária para encarar um treino pesado - e é aí que entram os suplementos. Esses produtos facilitam o dia a dia de quem quer aumentar o desempenho e alcançar o corpo tão desejado. Vale lembrar que a prescrição deve ser feita pelo nutricionista, pois é o profissional capacitado para identificar as necessidades do organismo e suplementar de forma adequada.</p>
+            <img src="assets/energia3.jpg" alt="" id="sai">
+        </article>
+    </main>
+    
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
