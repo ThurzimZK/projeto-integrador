@@ -59,6 +59,10 @@ span#burguer:active{
     background-color: white;
     color: rgb(55, 112, 235);
 }
+span#burguer:disabled{
+    background-color: rgb(14, 69, 187);
+    color: white;
+}
 menu{
     display: none;
 }

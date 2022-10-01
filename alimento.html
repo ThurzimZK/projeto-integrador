@@ -14,11 +14,11 @@
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <img src="assets/img_header.png" alt="" id="first">
+        <img src="assets/img_header.png" alt="logo" id="first">
         <h1>SAÚDE NA ACADEMIA</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
-            <ul>
+            <ul class = "list-unstyled">
                 <li><a href="index.html">Musculação</a></li>
                 <li><a href="alimento.html">Alimentação</a></li>
                 <li><a href="massa.html">Massa Muscular</a></li>
@@ -32,9 +32,9 @@
             <h1>Alimentação e seus objetivos</h1>
         <p>Uma alimentação saudável é aquela que garante ao organismo todos os nutrientes de que ele precisa. Isso significa que, para termos uma alimentação adequada, não temos que pensar apenas em quantidade, é fundamental pensar na qualidade do que estamos ingerindo, bem como na variedade e sempre pensar no equilíbrio em nossas refeições. Atualmente, erramos muito quando o assunto é alimentação saudável, principalmente, devido ao ritmo de vida que temos levado. Alimentos ricos em açúcar, gordura e sal, ausência de alimentos frescos em nossos pratos, pouca variedade e pular as refeições são alguns dos erros que cometemos ao nos alimentar.</p>
         
-        <img id="sai" src="assets/alimentacao.jpg"  alt="">
+        <img id="sai" src="assets/alimentacao.jpg"  alt="img.jpg">
         <p>Para se ter uma alimentação saudável, alguns pontos importantes devem ser destacados, como:</p>
-        <ul>
+        <ul id="listaA">
             <li>Não pular refeições;</li>
             <li>Comer verduras, legumes e frutas diariamente;</li>
             <li>Alimentar-se de alimentos in natura ou minimamente processados;</li>
@@ -51,10 +51,14 @@
         <p>Emagrecer com saúde depende da combinação de dieta saudável e balanceada com atividades físicas regulares. Assim, muito além do valor calórico de cada alimento, deve-se prezar pelo seu valor nutricional - como, por exemplo, a presença de nutrientes como vitaminas e minerais -, contemplando todos os grupos alimentares nas refeições. A pirâmide alimentar classifica os alimentos em oito grupos: carboidratos, vegetais, frutas, carnes, leite, leguminosas, gorduras e açúcares. Cada um desses grupos possui sua própria função e importância para a saúde, e deve ser inserido na dieta em níveis adequados para atingir o emagrecimento. O acompanhamento de um nutricionista também é indicado para emagrecer com saúde. Esse profissional é capacitado para desenvolver uma dieta hipocalórica que enfatize não somente o emagrecimento, mas que também preze pela saúde e pelo bem-estar.</p>
         <h2>Suplementos</h2>
         <p>São produtos com características e propriedades similares às alimentares, considerando os valores nutricionais. No entanto, os suplementos são substâncias químicas e concentradas produzidas nos mais variados formatos. Eles podem ser consumidos em forma de cápsulas, líquidos, pó, granulados e pastilhas. A composição de vitaminas, minerais e vitaminas, beneficia a saúde do coração, rins, fígado e músculos. Antes de mostrar a utilidade e a eficácia dos suplementos, é importante dizer que eles não substituem uma . Portanto, devem ser usados exatamente como complemento, para balancear e equilibrar as taxas de nutrientes do corpo. Assim, eles serão capazes de cumprir a missão a qual foram desenvolvidos. Portanto, eles servem para complementar a alimentação, para deixá-la mais saudável e balanceada, de acordo com os objetivos de cada pessoa.</p>
-        <img id="sai" src="assets/suplementos.jpg" class="img-fluid" alt="...">
+        <img id="sai" src="assets/suplementos.jpg" class="img-fluid" alt="img.jpg">
         </article>
     </main>
-    
+    <link href = "/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+    <script src = "/scripts/jquery.min.js"></script>
+    <script src = "/bootstrap/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script>
         function mudouTamanho() {
             if (window.innerWidth >= 768){
