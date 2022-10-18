@@ -85,25 +85,7 @@ main{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-/* ul in 2° page */
-article > ul{
-    padding-top: 15px;
-    list-style-position: inside;
-}
-article > h1{
-    font-size: 25px;
-    text-align: left;
-    padding-bottom: 15px;
-}
-article > h2{
-    padding-bottom: 20px;
-    padding-top: 25px;
-}
-article > p{
-    padding-top: 10px;
-    font-size: 1.1em;
-    text-indent: 30px;
-}
+
 
 img#grupo{
     width: 100%;
@@ -125,12 +107,27 @@ div#grupo{
 }
 
 #cartao{
-    height: 490px;
+    height: 500px;
 }
 a{
     text-decoration: none;
 }
-
+  @media screen and (min-width: 500px) {
+    main{
+        height: 1890px;
+    }
+    #cartao{
+        height: 550px;
+    }
+  }
+  @media screen and (min-width: 600px ) and (max-width: 768px) {
+    main{
+        height: 2100px;
+    }
+    #cartao{
+        height: 620px;
+    }
+  }
   @media screen and (min-width: 768px){
    
     img#grupo{
@@ -148,5 +145,8 @@ a{
     }
     #gg{
         margin-top: 23px;
+    }
+    #cartao{
+        height: 500px;
     }
   }
