@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS/ICONS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- TITULO -->
     <title>Stay Strong</title>
+
+     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/scroll.css">
 
+    <!-- BOOTSTRAP -->
     <link href = "/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
     <script src = "/scripts/jquery.min.js"></script>
     <script src = "/bootstrap/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
-<body onresize="mudouTamanho()">
+<body onresize="mudouTamanho()"><!-- FUNÇÃO QUE IDENTIFICA A MUDANCA DA LARGURA DA TELA -->
     <header>
-        <img src="assets/img_header.png" alt="logo" id="first">
+        <img src="assets/img_header.png" alt="logo" id="first"><!-- LOGO, PARTE SUPERIOR ESQUERDA-->
         <h1>SAÚDE NA ACADEMIA</h1>
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span><!-- MENU HAMBURGUER -->
         <menu id="itens">
             <ul class = "list-unstyled">
-                <li><a href="index.html">Musculação</a></li>
-                <li><a href="alimento.html">Alimentação</a></li>
-                <li><a href="massa.html">Massa Muscular</a></li>
-                <li><a href="energia.html">Energia</a></li>
-                <li><a href="grupo.html">Grupo</a></li>
+                <li><a href="index.html">Musculação</a></li> <!-- PAGINA 1 -->
+                <li><a href="alimento.html">Alimentação</a></li> <!-- PAGINA 2 -->
+                <li><a href="massa.html">Massa Muscular</a></li> <!-- PAGINA 3 -->
+                <li><a href="energia.html">Energia</a></li> <!-- PAGINA 4 -->
+                <li><a href="grupo.html">Grupo</a></li> <!-- PAGINA 5 -->
             </ul>
         </menu>
     </header>
     <main>
         <article>
+            <!-- CONTEUDO -->
             <h1>Massa muscular</h1>
             <p>Ganhar massa muscular é o objetivo de muitas pessoas que fazem treinos e frequentam a academia, assim como emagrecer. Com uma dieta elaborada por um profissional da área da saúde, uma rotina de exercícios físicos intensa e o consumo dos suplementos certos, é possível desenvolver os músculos de forma ainda mais eficiente. Confira agora mais informações sobre como desenvolver a hipertrofia, quais os tipos de alimentos indicados e a importância da proteína em uma dieta com o objetivo de ganhar massa muscular.</p>
          
@@ -50,11 +58,12 @@
             <p>O consumo de proteína é essencial para quem deseja alcançar a hipertrofia perfeita. O consumo de alimentos ricos em proteína pode, além de gerar mais energia para os treinos, reservar as funções corporais durante os momentos de repouso e manter a integridade funcional do organismo. No entanto, o acompanhamento de uma dieta rica em proteínas deve ser feito por um profissional, para evitar que o consumo seja excessivo e prevenir o surgimento de possíveis efeitos colaterais, uma vez que o organismo consegue absorver uma quantidade certa por dia.</p>
             
                 <img src="assets/massa3.jpg" alt="img.jpg" id="sai" class="small_img">
-                
+              <!-- FIM DO CONTEUDO -->  
         </article>
     </main>
     
     <script>
+        // FUNÇÃO QUE IDENTIFICA O TAMANHO DA TELA
         function mudouTamanho() {
             if (window.innerWidth >= 768){
                 itens.style.display = 'block'
@@ -62,6 +71,7 @@
                 itens.style.display = 'none'
             }
         }
+        // FUNÇÃO PARA ABRIR E FECHAR O MENU HAMBURGER
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
