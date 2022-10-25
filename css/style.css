@@ -42,6 +42,7 @@ span#burguer{
 span#burguer:hover{
     background-color: white;
     color: rgb(55, 112, 235);
+    border: 3px solid #3770eb;
 }
 nav{
     padding-top: 15px;
@@ -58,17 +59,18 @@ menu > ul{
 menu > ul > li > a{
     display: block;
     padding: 10px;
+    margin-top: 1px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(55, 112, 235);
     color: white;
     font-weight: bold;
-    border-top: 2px solid white;
     border-radius: 10px;
 }
 menu > ul > li > a:hover{
     background-color: white;
     color: rgb(55, 112, 235);
+    border: 3px solid #3770eb;
 }
 main{
     width: 80vw;

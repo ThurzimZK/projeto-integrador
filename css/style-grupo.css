@@ -59,17 +59,18 @@ menu > ul{
 menu > ul > li > a{
     display: block;
     padding: 10px;
+    margin-top: 1px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(55, 112, 235);
     color: white;
     font-weight: bold;
-    border-top: 2px solid white;
     border-radius: 10px;
 }
 menu > ul > li > a:hover{
     background-color: white;
     color: rgb(55, 112, 235);
+    border: 3px solid #3770eb;
 }
 main{
     width: 80vw;
@@ -112,12 +113,36 @@ div#grupo{
 a{
     text-decoration: none;
 }
+#arthur{
+    width: 100%;
+    height: 50%;
+}
+#guilherme{
+    width: 100%;
+    height: 50%;
+}
+#wilian{
+    width: 100%;
+    height: 50%;
+}
   @media screen and (min-width: 500px) {
     main{
         height: 1910px;
     }
     #cartao{
         height: 550px;
+    }
+    #arthur{
+        width: 100%;
+        height: 50%;
+    }
+    #guilherme{
+        width: 100%;
+        height: 50%;
+    }
+    #wilian{
+        width: 100%;
+        height: 50%;
     }
   }
   @media screen and (min-width: 600px ) and (max-width: 768px) {
@@ -127,6 +152,18 @@ a{
     #cartao{
         height: 620px;
     }
+    #arthur{
+        width: 100%;
+        height: 60%;
+    }
+    #guilherme{
+        width: 100%;
+        height: 60%;
+    }
+    #wilian{
+        width: 100%;
+        height: 60%;
+    }
   }
   @media screen and (min-width: 768px){
    
@@ -135,6 +172,7 @@ a{
     }
     main{
         height: 710px;
+
     }
     div h5{
         text-align: left;
@@ -148,5 +186,17 @@ a{
     }
     #cartao{
         height: 500px;
+    }
+    #arthur{
+        width: 100%;
+        height: 42%;
+    }
+    #guilherme{
+        width: 100%;
+        height: 42%;
+    }
+    #wilian{
+        width: 100%;
+        height: 42%;
     }
   }
