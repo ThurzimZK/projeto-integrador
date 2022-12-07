@@ -39,7 +39,7 @@ span#burguer{
     padding: 10px;
 }
 span#burguer:hover{
-    background-color: white ;
+    background-color: white;
     color: rgb(55, 112, 235);
 }
 span#burguer:active{
@@ -50,8 +50,13 @@ span#burguer:disabled{
     background-color: rgb(14, 69, 187);
     color: white;
 }
+.list-unstyled{
+    width: 100% !important;
+    text-align: center;
+}
 menu{
     display: none;
+    background-color:  rgb(14, 69, 187);
 }
 menu > ul{
     list-style-type: none;
@@ -59,18 +64,22 @@ menu > ul{
 menu > ul > li > a{
     display: block;
     padding: 10px;
-    margin-top: 1px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(55, 112, 235);
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-}
-menu > ul > li > a:hover{
     background-color: white;
     color: rgb(55, 112, 235);
-    border: 3px solid #3770eb;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid rgb(55, 112, 235);
+}
+menu > ul > li > a:hover{
+    background-color: rgb(55, 112, 235);
+    color: white;
+}
+menu > ul > li > a.atual{
+    background-color: rgb(55, 112, 235);
+    color: white;
+    border: 1px solid white;
 }
 main{
     width: 80vw;
